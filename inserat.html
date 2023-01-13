@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Inserat – Aushilfstrainer</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="flex">
+
+        <a href= "index.html">
+            <img  class="logo" src="img/logo.png" alt="logo";>
+          </a>
+
+        <nav class="container-header">
+
+            <a href="../">
+
+                <button id="neuerTrainer">Alle Inserate</button>
+                
+            </a>
+
+            <button id="logout" onclick="logout()">Logout</button>
+
+        </nav>
+
+    </header>
+
+    
+    <div class="uebersicht">
+        <h2>Mein Inserat</h2>
+    </div>
+
+    <div id="meinInserat">
+
+        <img id="bild-vorschau" width="250px" src="" alt="">
+        <br>
+
+        <label for="bild">Lade dein Profilbild hoch</label> <br>
+              
+      <a class="button b-klein" href="php/bild.php" onclick="window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=700px,height=500px'); return false;">Bild hochladen</a> 
+
+        <br>
+        <input id="bild" type="text" value="" placeholder="Hier URL einfügen"> <br>
+        
+        <label for="trainername">Wie ist dein Name?</label> <br>
+        <input id="trainername" type="text" value=""> <br>
+
+        <label for="mail">Wie ist deine E-Mail Adresse?</label> <br>
+        <input id="mail" type="text" value=""> <br>
+
+        <label for="sport">Welche Sportart unterrichtest du?</label> <br>
+
+
+        <select class="dropdown" name="sport" id="sport">
+            <option value="0"></option>
+            <option value="1">Aikido</option>
+            <option value="2">Badminton</option>
+            <option value="3">Ballett</option>
+            <option value="4">Basketball</option>
+            <option value="5">Bogenschiessen</option>
+            <option value="6">Contemporary Dance</option>
+            <option value="7">Eishockey</option>
+            <option value="8">Eiskunstlauf</option>
+            <option value="9">Fussball</option>
+            <option value="10">Geräteturnen</option>
+            <option value="11">Handball</option>
+            <option value="12">Hip-Hop</option>
+            <option value="13">Judo</option>
+            <option value="14">Karate</option>
+            <option value="15">Kinder- und Jugendriege</option>
+            <option value="16">Klettern</option>
+            <option value="17">Kunstturnen</option>
+            <option value="18">Leichtathletik</option>
+            <option value="19">Orientierungslauf</option>
+            <option value="20">Parkour</option>
+            <option value="21">Reiten</option>
+            <option value="22">Rhythmische Gymnastik</option>
+            <option value="23">Rudern</option>
+            <option value="24">Schwimmen</option>
+            <option value="25">Schwingen</option>
+            <option value="26">Skifahren</option>
+            <option value="27">Tennis</option>
+            <option value="28">Tischtennis</option>
+            <option value="29">Unihockey</option>
+            <option value="30">Volleyball</option>
+
+        </select>
+
+        <br>
+
+        
+
+        <label for="altersstufe">Welche Altersstufe unterrichtest du?</label> <br>
+        <input id="altersstufe" type="text" value=""> <br>
+
+        <label for="ort">Wo wohnst du?</label> <br>
+        <input id="ort" type="text" value=""> <br>
+
+        <label for="qualifikation">Was sind deine Qualifikationen?</label> <br>
+        <input id="qualifikation" type="text" value=""> <br>
+
+        <label for="zeit">Wann hast du Zeit?</label> <br>
+        <input id="zeit" type="text" value=""> <br>
+
+        <button class="hidden b-klein" id="button-neue" onclick="neuesInserat()">Veröffentlichen</button>
+        <button class="hidden b-klein" id="button-aktualisieren" onclick="aktualisiereInserat()">Aktualisieren</button>
+        <button class="hidden b-klein" id="button-loeschen" onclick="loescheInserat()">Löschen</button>
+
+        <p id="nachricht"> </p>
+
+    </div>
+
+    <footer>
+        <div class="footertext">
+          <p> <b>Kontakt</b> </p>
+          <p> +41 79 593 23 565 <p>
+          <p> info@aushilfstrainer.ch </p>
+        </div>
+        </footer>
+
+
+    <script src="js/trainer.js"></script>
+
+</body>
+
+</html>

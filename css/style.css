@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: auto;
+}
+
+.logo {
+  width: 15vw;
+  margin: 20px;
+}
+
+.footertext {
+  margin: 0 auto;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#meinInserat {
+  width: 35vw;
+  margin: 0vh auto 10vh auto;
+  padding: 40px;
+  background-color: #777777;
+  display: flex;
+  justify-content: center;
+ 
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+footer {
+  position: absolute;
+  background-color: #BBBBBB;
+  object-fit: cover;
+  width: 100%;
+}
+
+.input-box {
+
+  width: 35vw;
+  margin: 10vh auto 10vh auto;
+  padding: 40px;
+  background-color: #777777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.input-box p {
+  color: #FFFFFF;
+}
+
+.input-box a {
+  color: #efc900;
+}
+
+h1 {
+
+    font-size: 40px;
+    color: #777777;
+
+}
+
+h3 {
+  font-size: 20px;
+  color: white;
+}
+
+
+
+.uebersicht {
+  text-align: center;
+  color: #777777;
+}
+
+.title{
+
+    text-align: center;
+}
+
+a {
+
+    color: rgb(5, 72, 100);
+}
+
+input {
+    margin: 10px;
+    width: 40%;
+}
+
+textarea {
+    margin: 10px;
+    width: 50%;
+}
+
+button {
+
+    margin: 10px;
+
+}
+
+.dropdown{
+    width: 40%;
+    margin: 10px;
+}
+
+.trainer {
+
+    background-color: #777777;
+    padding: 40px;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.trainer-image {
+
+    width: 50%;
+}
+
+#liste-trainer {
+
+    width: 35vw;
+    margin: auto;
+}
+
+nav {
+   text-align: right;
+}
+label {
+  color: #FFFFFF;
+}
+
+button {
+    background-color: #efc900;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.button {
+  background-color: #efc900;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    line-height: 1.15rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.hidden {
+
+    display: none;
+
+}
+#infoText {
+  color: white;
+  margin: 5px 0 30px 0;
+  margin: 20px auto;
+}
+
+#nachricht {
+  color: #FFFFFF;
+}
+
+.b-klein {
+  width: 200px;
+}
+
+@media only screen and (max-width: 800px) {
+  #meinInserat {
+    width: 70vw;
+    padding: 20px;
+  }
+
+  .input-box {
+
+    width: 70vw;
+    padding: 20px;
+  }
+
+  #liste-trainer {
+
+    width: 70vw;
+    margin: auto;
+}
+
+  .b-klein {
+    width: 150px;
+    font-size: 14px;
+  }
+}
